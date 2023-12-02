@@ -5,6 +5,7 @@
 
 body{
     background-color: #dcdad9;
+    height: 500vh;
 }
 
 header{
@@ -44,6 +45,11 @@ ul li{
     font-size: 16pt;
 }
 
+li a{
+    text-decoration: none;
+    color: black;
+}
+
 #menu_dropDown a{
     text-decoration: none;
     color: black;
@@ -53,6 +59,7 @@ ul li{
     position: absolute;
     display: none; /* esconde o menu */
     margin-top: 10px;
+    z-index: 1;
 }
 
 #menu a{
@@ -79,9 +86,104 @@ ul li{
 
 #consulta{
     cursor: pointer;
+    user-select: none;
 }
 
 #contato{
-    border: solid;
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+#titulo_contato h1{
+    margin-bottom: 15px;
+}
+
+#numero #icone_contato{
+    font-size: 20pt;
+    margin-right: 15px;
+}
+
+#numero #telefone{
+    font-size: 15pt;
+}
+
+#telefone a{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    height: 500px;
+    position: relative;
+    background-color: #e6e4e3;
+}
+
+#main_contato{
+    height: 100%;
+    display: flex;
+}
+
+#img_main{
+    height: 100%;
+    width: 60%;
+    background-image: url(./img_proj/criancas-que-jogam-na-grama.jpg);
+    background-size: cover;
+}
+
+#form_consulta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+#conteudo_form_consulta{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteudo_form_consulta h1, h4{
+    margin-bottom: 15px;
+}
+
+#conteudo_form_consulta h1{
+    font-size: 22pt;
+}
+
+#conteudo_form_consulta h4{
+    font-size: 15pt;
+}
+
+#conteudo_form_consulta a{
+    text-decoration: none;
+    color: black;
+    background-color: #ffdd9d;
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(75, 75, 75);
+    font-size: 20px;
+}
+
+#conteudo_form_consulta a:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+#contato_whats{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 0;
+    background-image: url(img_proj/Logo_Whats_semfundo.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+

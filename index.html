@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
+
 <body>
     <header>
         <div id="logo">
@@ -15,21 +17,45 @@
         <nav>
             <ul>
                 <li id="menu_dropDown">
-                    <span id="consulta">Consultas <span id="icone"><i class="bi bi-caret-down-fill"></i></span></span> 
+                    <span id="consulta">Consultas <span id="icone"><i class="bi bi-caret-down-fill"></i></span></span>
                     <div id="menu">
                         <a href="">Psicomotricista</a>
                         <a href="">Psicologa</a>
                         <a href="">Psicopedagogia</a>
                         <a href="">Neuropsicologia</a>
-                        <script src="script.js"></script>
                     </div>
                 </li>
-                <li>Nossa Unidade</li>
-                <li>Sobre Nós</li>
-                <li>Nossa Equipe</li>
+                <li><a href="">Nossa Unidade</a></li>
+                <li><a href="">Sobre Nós</a></li>
+                <li><a href="">Nossa Equipe</a></li>
             </ul>
         </nav>
-        <div id="contato"></div>
+        <div id="contato">
+            <div id="titulo_contato">
+                <h1>Nosso atendimento</h1>
+            </div>
+            <div id="numero">
+                <span id="icone_contato"><i class="bi bi-telephone-inbound"></i></span><span id="telefone"><a href="">(11)999999-999</a></span>
+            </div>
+        </div>
     </header>
+
+    <main>
+        <section id="main_contato">
+            <div id="img_main">
+            </div>
+            <div id="form_consulta">
+                <div id="conteudo_form_consulta">
+                    <h1>Agende sua consulta por aqui também!</h1>
+                    <h4>De segunda a sábado dás 08 ás 21hs</h4>
+                    <a href="">Agende agora!</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="contato_whats"></div>
+    <script src="script_menuDropDown.js"></script>
+    <script src="./script_whats.js"></script>
 </body>
 </html>
