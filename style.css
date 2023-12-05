@@ -77,11 +77,18 @@ li a{
     transform: translateX(20px);
 } 
 
-#icone{
+#icone1{
     font-size: 18px;
     color: rgb(63, 59, 59);
     line-height: 80px;
     cursor: pointer;
+    display: inline-block;
+    transition: none;
+}
+
+.rodando{
+    transform:rotate(180deg);  
+    transition: all 2s ease-in-out;
 }
 
 #consulta{
@@ -186,4 +193,36 @@ main{
     cursor: pointer;
 }
 
+#funcionarios{
+    border: solid;
+    margin-top: 20px;
+    height: 600px;
+    background-color: #dcdad9;
+    display: inline-block;
+    width: 100% ;
+}
+
+#funcionarios_clinica{
+    border: solid;
+    width: 80%;
+    position: relative;
+    height: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    gap: 15px;
+}
+
+#titulo_funcionarios h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 25pt;
+}
+
+#funcionaria1, #funcionaria2, #funcionaria3{
+    border: solid;
+    width: 33%;
+}
 
